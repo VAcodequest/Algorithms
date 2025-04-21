@@ -1,10 +1,9 @@
-## Binary Search
-
+# Binary Search
 # - Arguments
 # 1. The array/list
 # 2. Low pointer
 # 3. High pointer
-# 4. The number you are looking
+# 4. The number you are looking for
 # --------
 # - The code
 # 1. Check if the exit condition is true
