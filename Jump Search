@@ -1,0 +1,32 @@
+# Jump Search
+# - Arguments
+# 1. The array/list
+# 2. Low pointer (start index)
+# 3. High pointer (end index)
+# 4. The number you are looking for
+# ---------------------------------------------------------------------------------------
+# - The code
+# 1. Calculate block size as the integer square root of (high–low+1)
+# 2. Jump ahead by block size until arr[min(prev+step, high)] ≥ x or prev exceeds high
+# 3. Do a linear search from prev up to min(prev+step, high)
+
+def jina(arr, low, high, x):
+    length = high - low + 1
+    step = int(length ** 0.5)               # 1. block size
+    prev = low
+
+    while prev <= high and arr[min(prev + step, high)] < x:
+        prev += step
+
+    end = min(prev + step, high)
+    while prev <= end:
+        if arr[prev] == x:
+            return prev
+        prev += 1
+
+    return -1
+
+arr = [1,2,3,4,5,6,7]
+x = 6
+print(jina(arr, 0, len(arr)-1, x))
+# → 5  (since arr[5] == 6)
