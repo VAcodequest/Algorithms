@@ -1,0 +1,43 @@
+# Merge Sort
+# - Arguments
+# 1. The array/list
+# --------
+# - The code
+# 1. Check if the array length is greater than one.
+# 2. Divide array into two halves (left and right).
+# 3. Recursively sort each half.
+# 4. Merge sorted halves back together.
+def merga(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left = arr[:mid]
+        right = arr[mid:]
+
+        merga(left)
+        merga(right)
+
+        i = j = k = 0
+
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
+
+        while i < len(left):
+            arr[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            arr[k] = right[j]
+            j += 1
+            k += 1
+
+arr = [5, 3, 6, 1, 4, 2, 7]
+merga(arr)
+print(arr)
+# → [1, 2, 3, 4, 5, 6, 7]
