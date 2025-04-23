@@ -1,0 +1,20 @@
+# Bubble Sort
+# - Arguments
+# 1. The array/list
+# --------
+# - The code
+# 1. Loop over each element from start to end (outer loop)
+# 2. For each element, loop again from the start to the end minus current outer loop index minus one (inner loop)
+#     - if the current element is greater than the next one, swap them
+# 3. After looping completes, the array is sorted
+def bubba(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+arr = [5, 3, 6, 1, 4, 2, 7]
+bubba(arr)
+print(arr)
+# → [1, 2, 3, 4, 5, 6, 7]
