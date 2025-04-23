@@ -1,0 +1,23 @@
+# Selection Sort
+# - Arguments
+# 1. The array/list
+# --------
+# - The code
+# 1. Loop through each element in the list.
+# 2. Assume the current index is the minimum.
+#    - loop from next index to end, checking for smaller values
+#    - if a smaller value is found, update the minimum index
+# 3. After inner loop, swap current index with found minimum index.
+def selec(arr):
+    n = len(arr)
+    for i in range(n):
+        min_idx = i
+        for j in range(i+1, n):
+            if arr[j] < arr[min_idx]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [5, 3, 6, 1, 4, 2, 7]
+selec(arr)
+print(arr)
+# → [1, 2, 3, 4, 5, 6, 7]
