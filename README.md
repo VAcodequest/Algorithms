@@ -25,3 +25,5 @@ A divide-and-conquer algorithm that splits the array into halves, recursively so
 ### ◇ Heap Sort:
 Transforms the input array into a max heap structure, then repeatedly extracts the maximum element and maintains the heap property. Offers consistent O(n log n) performance and does not require additional memory for recursion.
 
+### ◇ Quick Sort
+A divide-and-conquer algorithm that selects a pivot element, partitions the array around the pivot, and recursively applies the same strategy to the sub-arrays. Efficient for large datasets with average-case time complexity of O(n log n).
