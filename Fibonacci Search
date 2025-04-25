@@ -1,0 +1,45 @@
+# Fibonacci Search
+# - Arguments
+# 1. The array/list (must be sorted)
+# 2. The number you are looking for
+# --------
+# - The code
+# 1. Generate Fibonacci numbers until one exceeds the array size
+# 2. Use these numbers to partition the array
+# 3. Shift offset and adjust Fibonacci window accordingly
+# 4. If value is found, return its index; else return -1
+def fib_search(arr, x):
+    n = len(arr)
+    fib2 = 0
+    fib1 = 1
+    fibM = fib2 + fib1
+
+    while fibM < n:
+        fib2 = fib1
+        fib1 = fibM
+        fibM = fib2 + fib1
+
+    offset = -1
+
+    while fibM > 1:
+        i = min(offset + fib2, n - 1)
+        if arr[i] < x:
+            fibM = fib1
+            fib1 = fib2
+            fib2 = fibM - fib1
+            offset = i
+        elif arr[i] > x:
+            fibM = fib2
+            fib1 = fib1 - fib2
+            fib2 = fibM - fib1
+        else:
+            return i
+
+    if fib1 and offset + 1 < n and arr[offset + 1] == x:
+        return offset + 1
+    return -1
+
+arr = [5, 10, 15, 20, 25]
+x = 20
+print(fib_search(arr, x))
+# → 3  (since arr[3] == 20)
