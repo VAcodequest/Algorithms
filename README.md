@@ -34,5 +34,8 @@ A non-comparative sorting algorithm ideal for sorting integers in a fixed range.
 ### ◇ Radix Sort
 A non-comparative sorting algorithm that processes integer keys digit-by-digit, from the least significant digit to the most significant. It relies on a stable sub-sorting method (like Counting Sort) and runs in O(nk) time, where k is the number of digits.
 
+### ◇ Exponential Search
+Used for searching in sorted arrays. It works by exponentially increasing the search range and then using binary search within that range. Ideal for large-sized datasets with unknown bounds.
+
 ### ◇ Shell Sort
 An optimization of Insertion Sort that allows comparison and exchange of elements far apart. It uses a gap sequence to reduce the overall number of swaps, improving performance over plain Insertion Sort for medium-sized datasets. Average time complexity is O(n log² n).
