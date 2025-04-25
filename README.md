@@ -22,3 +22,6 @@ Builds the final sorted list one item at a time by comparing each new element to
 ### ◇ Merge Sort:  
 A divide-and-conquer algorithm that splits the array into halves, recursively sorts them, and merges the sorted halves into a final sorted array. Runs in O(n log n) time.
 
+### ◇ Heap Sort:
+Transforms the input array into a max heap structure, then repeatedly extracts the maximum element and maintains the heap property. Offers consistent O(n log n) performance and does not require additional memory for recursion.
+
