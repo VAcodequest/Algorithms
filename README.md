@@ -1,4 +1,4 @@
-# 🍷 Algorithms
+# 🥂  Algorithms
 This particular repository contains Python code from my learning experience. This contains everything I know about algorithms and everything I am currently learning.
 
 #### Search Algorithms
