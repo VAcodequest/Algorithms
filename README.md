@@ -7,6 +7,9 @@ This particular repository contains Python code from my learning experience. Thi
 ### ◇ Exponential Search
 Used for searching in sorted arrays. It works by exponentially increasing the search range and then using binary search within that range. Ideal for large-sized datasets with unknown bounds.
 
+### ◇ Fibonacci Search
+Uses Fibonacci numbers to divide the array and search, offering an alternative to binary search with fewer computations in some cases. Time complexity: O(log n).
+
 ### ◇ Binary Search:  
 Searches a sorted array in O(log n) time by repeatedly dividing the search interval in half.
 
@@ -52,9 +55,5 @@ A non-comparative sorting algorithm that processes integer keys digit-by-digit, 
 ### ◇ Shell Sort
 An optimization of Insertion Sort that allows comparison and exchange of elements far apart. It uses a gap sequence to reduce the overall number of swaps, improving performance over plain Insertion Sort for medium-sized datasets. Average time complexity is O(n log² n).
 
-
-
-### ◇ Fibonacci Search
-Uses Fibonacci numbers to divide the array and search, offering an alternative to binary search with fewer computations in some cases. Time complexity: O(log n).
 
 
