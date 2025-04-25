@@ -1,0 +1,26 @@
+# Shell Sort
+# - Arguments:
+#   1. arr — list of numbers
+# --------
+# - The Code:
+#   1. Start with a large gap, then reduce the gap
+#   2. Perform gapped insertion sort for each gap
+
+def shell_sort(arr):
+    n = len(arr)
+    gap = n // 2
+
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2
+
+    return arr
+
+arr = [23, 12, 1, 8, 34, 54, 2, 3]
+print("Sorted array:", shell_sort(arr))
