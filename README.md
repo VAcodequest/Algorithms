@@ -27,3 +27,6 @@ Transforms the input array into a max heap structure, then repeatedly extracts t
 
 ### ◇ Quick Sort:
 A divide-and-conquer algorithm that selects a pivot element, partitions the array around the pivot, and recursively applies the same strategy to the sub-arrays. Efficient for large datasets with average-case time complexity of O(n log n).
+
+### ◇ Counting Sort
+A non-comparative sorting algorithm ideal for sorting integers in a fixed range. It counts the occurrences of each element and calculates their positions directly. Runs in O(n + k) time where k is the range of input values.
