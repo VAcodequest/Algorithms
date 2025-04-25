@@ -1,14 +1,29 @@
 # 🍷 Algorithms
 This particular repository contains Python code from my learning experience. This contains everything I know about algorithms and everything I am currently learning.
 
+## Search Algorithms
+---
+
+### ◇ Exponential Search
+Used for searching in sorted arrays. It works by exponentially increasing the search range and then using binary search within that range. Ideal for large-sized datasets with unknown bounds.
+
 ### ◇ Binary Search:  
 Searches a sorted array in O(log n) time by repeatedly dividing the search interval in half.
 
 ### ◇ Linear Search:  
 Examines each element sequentially until the target value is located or the end of the array is reached.
 
+### ◇ Ternary Search
+Divides the search space into three parts and recursively narrows it down. Works efficiently on sorted arrays and unimodal functions. Time complexity: O(log₃ n).
+
+### ◇ Interpolation Search
+Improves on binary search by estimating the position of the target based on its value, useful when data is uniformly distributed. Time complexity: O(log log n) (best case), O(n) (worst case).
+
 ### ◇ Jump Search:  
 Advances by fixed intervals (√n) in a sorted array, then performs a linear scan within the identified block.
+
+## Sorting Algorithms
+---
 
 ### ◇ Bubble Sort:  
 Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. Simple but inefficient (O(n²)).
@@ -34,17 +49,10 @@ A non-comparative sorting algorithm ideal for sorting integers in a fixed range.
 ### ◇ Radix Sort
 A non-comparative sorting algorithm that processes integer keys digit-by-digit, from the least significant digit to the most significant. It relies on a stable sub-sorting method (like Counting Sort) and runs in O(nk) time, where k is the number of digits.
 
-### ◇ Exponential Search
-Used for searching in sorted arrays. It works by exponentially increasing the search range and then using binary search within that range. Ideal for large-sized datasets with unknown bounds.
-
 ### ◇ Shell Sort
 An optimization of Insertion Sort that allows comparison and exchange of elements far apart. It uses a gap sequence to reduce the overall number of swaps, improving performance over plain Insertion Sort for medium-sized datasets. Average time complexity is O(n log² n).
 
-### ◇ Ternary Search
-Divides the search space into three parts and recursively narrows it down. Works efficiently on sorted arrays and unimodal functions. Time complexity: O(log₃ n).
 
-### ◇ Interpolation Search
-Improves on binary search by estimating the position of the target based on its value, useful when data is uniformly distributed. Time complexity: O(log log n) (best case), O(n) (worst case).
 
 ### ◇ Fibonacci Search
 Uses Fibonacci numbers to divide the array and search, offering an alternative to binary search with fewer computations in some cases. Time complexity: O(log n).
