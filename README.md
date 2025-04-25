@@ -1,7 +1,7 @@
 # 🍷 Algorithms
 This particular repository contains Python code from my learning experience. This contains everything I know about algorithms and everything I am currently learning.
 
-## Search Algorithms
+#### Search Algorithms
 ---
 
 ### ◇ Exponential Search
@@ -22,7 +22,7 @@ Improves on binary search by estimating the position of the target based on its 
 ### ◇ Jump Search:  
 Advances by fixed intervals (√n) in a sorted array, then performs a linear scan within the identified block.
 
-## Sorting Algorithms
+#### Sorting Algorithms
 ---
 
 ### ◇ Bubble Sort:  
