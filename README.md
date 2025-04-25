@@ -30,3 +30,6 @@ A divide-and-conquer algorithm that selects a pivot element, partitions the arra
 
 ### ◇ Counting Sort
 A non-comparative sorting algorithm ideal for sorting integers in a fixed range. It counts the occurrences of each element and calculates their positions directly. Runs in O(n + k) time where k is the range of input values.
+
+### ◇ Radix Sort
+A non-comparative sorting algorithm that processes integer keys digit-by-digit, from the least significant digit to the most significant. It relies on a stable sub-sorting method (like Counting Sort) and runs in O(nk) time, where k is the number of digits.
