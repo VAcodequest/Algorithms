@@ -1,5 +1,5 @@
 # Interpolation Search
-# - Arguments
+# Arguments
 # 1. The array/list (must be sorted and uniformly distributed)
 # 2. Low pointer (start index)
 # 3. High pointer (end index)
