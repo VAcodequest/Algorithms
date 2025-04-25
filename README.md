@@ -39,3 +39,14 @@ Used for searching in sorted arrays. It works by exponentially increasing the se
 
 ### ◇ Shell Sort
 An optimization of Insertion Sort that allows comparison and exchange of elements far apart. It uses a gap sequence to reduce the overall number of swaps, improving performance over plain Insertion Sort for medium-sized datasets. Average time complexity is O(n log² n).
+
+### ◇ Ternary Search
+Divides the search space into three parts and recursively narrows it down. Works efficiently on sorted arrays and unimodal functions. Time complexity: O(log₃ n).
+
+### ◇ Interpolation Search
+Improves on binary search by estimating the position of the target based on its value, useful when data is uniformly distributed. Time complexity: O(log log n) (best case), O(n) (worst case).
+
+### ◇ Fibonacci Search
+Uses Fibonacci numbers to divide the array and search, offering an alternative to binary search with fewer computations in some cases. Time complexity: O(log n).
+
+
